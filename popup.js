@@ -11,9 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
       // document.body.appendChild(audio);
       // audio.play();
 
-      let audio = new Audio('D2.mp3');
+      //let audio = new Audio('D2.mp3');
       //document.body.appendChild(audio);
-      audio.play();
+      //audio.play();
+	  
+	  // send message to background.js
+	  chrome.extension.sendMessage({action: "playSound"});
 
       let searchTerm = searchBox.value.replace(/\s/g, '+');
 

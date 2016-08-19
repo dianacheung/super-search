@@ -16,6 +16,9 @@
       "js": ["scrape.js"]
     }
   ],
+  "background": {
+	"scripts": ["background.js"]
+  },
   "permissions": [
     "tabs"
   ]
